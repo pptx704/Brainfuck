@@ -19,8 +19,8 @@ i.interprete()
 ```
 
 ### Plans-
-[x] Creating an interpreter
-[] Optimize it further
-[] Create the IDE
-[] Write some actual BF program
-[] Optional: Anything else
+-[x] Creating an interpreter
+-[] Optimize it further
+-[] Create the IDE
+-[] Write some actual BF program
+-[] Optional: Anything else
