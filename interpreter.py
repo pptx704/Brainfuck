@@ -15,7 +15,6 @@ class _Getch: # Python implementation of C's getchar function
             finally:
                 termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
             return ch
-        
 
 SIZE = 8 # 8 bit as default
 LIMIT = 2**SIZE - 1 # 0 - 255 as default
@@ -24,6 +23,9 @@ getch = _Getch() # _Getch's __call__ method would be used as a function later
 
 class I:
     def __init__(self, code = ""):
+        """
+        Initialization
+        """
         self._code = code
         self.commands = {
             # Did this as a replacement of switch statements
@@ -70,9 +72,6 @@ class I:
             # for all other cases do the intended task
             self.commands.get(var, self.skip)()
             i += 1
-    
-    def loop(self, code=None):
-        loop = 1
 
     # ord and chr function is used to convert the characters to ascii
     # number and vice versa so that mathematical operations can be done
@@ -104,7 +103,6 @@ class I:
     # leftmost cell and wants to go further left (or same for the right)
     # one cell is added with initial value 0 on the direction user wants 
     # to go.
-
     def lt(self):
         if self.ptr == 0:
             self.memarray.insert(0,0)
