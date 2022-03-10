@@ -21,6 +21,6 @@ i.interprete()
 ### Plans-
 - [x] Creating an interpreter
 - [ ] Optimize it further
-- [ ] Create the IDE
+- [o] Create the IDE (Not possible because of [Halting Problem](https://brilliant.org/wiki/halting-problem/))
 - [ ] Write some actual BF program
-- [ ] Optional: Anything else
+- [x] Optional: Anything else (Supports both NT and Posix system)
